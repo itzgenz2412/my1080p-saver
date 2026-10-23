@@ -1,0 +1,9 @@
+{
+  "name": "my1080p-saver",
+  "version": "2.0.0",
+  "private": true,
+  "description": "MY 1080p SAVER Node.js download manager with FFmpeg compression and AnimePahe integration",
+  "main": "server.js",
+  "scripts": { "start": "node server.js", "check": "node --check server.js" },
+  "dependencies": { "playwright": "1.56.1" }
+}

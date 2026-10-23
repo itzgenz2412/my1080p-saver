@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: my1080p-saver
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: APP_PASSWORD
+        sync: false
+      - key: SECRET_KEY
+        generateValue: true
+      - key: ANIMEPAHE_BASE_URL
+        value: https://animepahe.ch
+      - key: DATA_DIR
+        value: /app/data
+      - key: DOWNLOAD_DIR
+        value: /app/downloads
